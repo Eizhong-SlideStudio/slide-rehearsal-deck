@@ -1,0 +1,119 @@
+{
+  "title": "GreenCup Pilot · Visual Rehearsal Manual",
+  "subtitle": "Fictional sample deck demonstrating slide-by-slide visual sync, timeline recap, and contradiction guardrails",
+  "language": "en",
+  "primary_speaker": "Sam",
+  "timer_seconds": 180,
+  "meta_pills": [
+    "Sample Case: GreenCup Pilot",
+    "4 Slides · 2 Presenters",
+    "Target: ~4 min + Q&A",
+    "Primary Speaker: Sam Rivera"
+  ],
+  "overview": {
+    "heading": "4-Week Campus Pilot Recap & Presentation Arc",
+    "timeline_title": "Pilot Story at a Glance (4 Weeks, 340 Cup Loans)",
+    "timeline": [
+      {
+        "stage": "1. Launch Week",
+        "time": "Week 1",
+        "body": "Two campus cafes launched reusable cups with a **$2 refundable deposit** and a 50¢ first-refill discount. Launch week hit a **90% 48-hour return rate**.",
+        "quote": "Flyer claim: '90% of cups come right back!'"
+      },
+      {
+        "stage": "2. Friction Emerges",
+        "time": "Weeks 2–3",
+        "body": "Only **one return bin** existed at North Hub—450m from Lecture Block B. Lunch-rush QR scans jammed, pulling weekly returns down to **68%**.",
+        "quote": "42 exit interviews: 'Too far to walk back after class.'",
+        "tone": "alert"
+      },
+      {
+        "stage": "3. Redesign Proposal",
+        "time": "Week 4 Review",
+        "body": "Data showed **distance and scan friction** outweighed the $2 deposit. Phase 2 adds **3 hallway RFID drop bins** and an instant **$4** tap refund.",
+        "quote": "Outcome: 68% W4 plateau (109 cups unreturned out of 340).",
+        "tone": "highlight"
+      }
+    ],
+    "progression_label": "Weekly Return Trajectory:",
+    "progression": [
+      { "label": "Week 1: 90%" },
+      { "label": "Week 2: 79%" },
+      { "label": "Week 3: 68%", "tone": "cash" },
+      { "label": "Week 4: 68% plateau", "tone": "cash" },
+      { "label": "Phase 2 Goal: RFID + 3 Bins", "tone": "deal" }
+    ],
+    "speakers_title": "Presenter Division & Alignment Alerts",
+    "speakers": [
+      {
+        "title": "Part A · Alex Chen · Slides 1–2 (~1m45s)",
+        "desc": "**Setup & early traction.** Introduces the 340-cup pilot, deposit pricing, and the Week 1 vs. Week 3 drop-off curve.",
+        "warn": "⚠ Slide 2 alert: Do NOT present the 90% Week 1 headline as the full pilot result—state the 68% plateau upfront.",
+        "is_primary": false
+      },
+      {
+        "title": "★ Part B · Sam Rivera (You) · Slides 3–4 (~2m00s)",
+        "desc": "**Diagnosis → Redesign → Takeaways.** Explains why distance beat the $2 deposit, pitches 3 RFID bins, and leads Q&A.",
+        "is_primary": true
+      }
+    ]
+  },
+  "slides": [
+    {
+      "num": 1,
+      "speaker": "Alex",
+      "is_primary": false,
+      "beat": "Part A · Setup",
+      "title": "GreenCup: Campus Reusable Cup Pilot",
+      "time": "45s",
+      "keywords": ["340 cup loans", "2 campus cafes", "4-week trial", "68% W4 return"],
+      "logic": "Opens with scope, scale (340 cup loans across 2 cafes), and clear division of labor between Alex (setup & trend) and Sam (friction analysis & redesign).",
+      "guard": "State clearly that 68% is the Week 4 stabilized return rate across all 340 loans, avoiding cherry-picked Week 1 numbers.",
+      "guard_level": "info",
+      "script": "Hello everyone. We are Group Alpha—Alex Chen and Sam Rivera. Over the past four weeks, we ran the **GreenCup reusable cup pilot** across two campus cafes, logging **340 total cup loans**. I will walk through our setup and early adoption curve, and Sam will diagnose why returns dropped and present our Phase 2 redesign.",
+      "source": "Fictional sample data: 340 loans, 2 cafes"
+    },
+    {
+      "num": 2,
+      "speaker": "Alex",
+      "is_primary": false,
+      "beat": "Part A · Contradiction Alert",
+      "title": "Early Traction vs. Week 3 Drop-Off",
+      "time": "60s",
+      "keywords": ["W1 90% headline", "W3–4 68% plateau", "109 unreturned", "Handoff to Sam"],
+      "logic": "Contrasts the Week 1 promotional headline (90%) with actual Weeks 1–4 scan logs (79% → 68%), creating tension that sets up Sam's friction diagnosis.",
+      "guard": "Watchout: Slide 2 displays '90% Return Rate!' in big green text on the left, while the footnote shows 68% by Week 3. Verbally call out that 90% was Week 1 only.",
+      "guard_level": "danger",
+      "script": "In Week 1, our $2 deposit and 50-cent refill discount produced an exciting **90% return rate**. However, **that 90% headline was Week 1 only**. As the full four-week tracker on the right shows, returns fell to 79% in Week 2 and plateaued at **68% in Weeks 3 and 4**—leaving 109 cups unreturned. Next, Sam will explain why our initial design stalled.",
+      "source": "Fictional scan log (Weeks 1–4) & slide footnote"
+    },
+    {
+      "num": 3,
+      "speaker": "Sam",
+      "is_primary": true,
+      "beat": "Part B · Diagnosis & Redesign",
+      "title": "Why Convenience Outweighed the $2 Deposit",
+      "time": "65s",
+      "keywords": ["450m walk", "QR lunch jam", "3 hallway RFID bins", "$4 instant refund"],
+      "logic": "Picks up directly from Alex's 68% plateau: pairs two behavioral bottlenecks (450m return walk + slow QR scan) with three concrete fixes for Phase 2.",
+      "guard": "Keep causal claims bounded: 42 exit interviews indicate distance and queue friction were top complaints, though deposit size and bin placement were not A/B tested separately.",
+      "guard_level": "warn",
+      "script": "Thanks, Alex. Looking at sensor logs and 42 exit interviews, **convenience outweighed the $2 deposit**. First, our single return bin sat 450 meters away at North Hub, far from Lecture Block B. Second, manual QR scans jammed during the 12:15 lunch rush. For Phase 2, we propose **three targeted fixes**: adding **three hallway bins** near lecture exits, switching to **two-second RFID tap-and-drop**, and raising the refundable deposit to **$4** with automatic wallet refunds.",
+      "source": "Fictional sensor timestamps & 42 student exit interviews"
+    },
+    {
+      "num": 4,
+      "speaker": "Sam",
+      "is_primary": true,
+      "beat": "Part B · Takeaways & Q&A",
+      "title": "Key Takeaways & Next Semester Rollout",
+      "time": "55s",
+      "keywords": ["Measure 4 weeks", "Bins at exits", "Automate refunds", "Welcome questions"],
+      "logic": "Synthesizes the pilot into three repeatable behavioral design principles and hands cleanly into Q&A with transparent role split.",
+      "guard": "Do not read the Q&A footer bullet-by-bullet; invite questions naturally after the third takeaway.",
+      "guard_level": "info",
+      "script": "To conclude, **three practical takeaways** from our pilot. First, **measure retention over at least four weeks**, not Week 1 launch hype. Second, **place return points where people exit**, rather than forcing a trip back to the cafe. Third, **automate deposit refunds** so returning a cup takes under two seconds. Thank you for listening—we welcome your questions.",
+      "source": "Summary & Q&A presenter allocation"
+    }
+  ]
+}
